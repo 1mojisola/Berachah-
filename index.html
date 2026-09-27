@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berachah — Graphic & Visual Designer</title>
+<meta name="description" content="Berachah — Graphic & Visual Designer. Flyers, posters, social media graphics, branding and digital visual design.">
+<style>
+:root{
+  --bg:#0b0b0f; --panel:#13131a; --panel2:#191922; --text:#f7f7f8;
+  --muted:#a5a5b1; --line:#292936; --accent:#c7a6ff; --accent2:#8e6bd8;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 80% 0%,#241c38 0,#0b0b0f 34%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(11,11,15,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.08em}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;color:#c8c8d0;font-size:.92rem}
+.navlinks a:hover{color:white}
+.hero{padding:105px 0 85px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.kicker{color:var(--accent);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(3rem,7vw,6.5rem);line-height:.95;letter-spacing:-.06em;margin:18px 0 25px}
+h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);font-size:1.08rem;max-width:650px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 21px;border-radius:999px;border:1px solid var(--line);font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:var(--text);color:#0b0b0f;border-color:var(--text)}
+.btn:hover{transform:translateY(-2px)}
+.hero-card{background:linear-gradient(145deg,#211c2d,#121218);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.hero-card .monogram{font-size:7rem;font-weight:950;line-height:.8;letter-spacing:-.12em;color:#fff}
+.hero-card .mini{margin-top:25px;color:#bdbac7}
+section{padding:82px 0}
+.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:32px}
+h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.04em}
+.section-head p{color:var(--muted);max-width:520px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.card-media{min-height:360px;background:#0e0e13;display:flex;align-items:center;justify-content:center;padding:24px}
+.card-media img{max-width:100%;max-height:480px;object-fit:contain;border-radius:14px;box-shadow:0 20px 55px rgba(0,0,0,.4)}
+.card-body{padding:24px}
+.tag{display:inline-block;color:var(--accent);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.card h3{font-size:1.45rem;margin-bottom:8px}
+.card p{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.skill{padding:20px;border:1px solid var(--line);border-radius:18px;background:#111118;color:#ddd;font-weight:750}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+.about-box{padding:30px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#191520,#101015)}
+.about-box h3{font-size:2rem;margin-bottom:12px}
+.about-box p{color:var(--muted)}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.step{padding:25px;border:1px solid var(--line);border-radius:20px}
+.num{color:var(--accent);font-weight:900}
+.step h3{margin:10px 0 5px}
+.step p{color:var(--muted)}
+.cta{padding:70px 35px;border-radius:30px;background:linear-gradient(135deg,#261d38,#121219);border:1px solid #3a2d50;text-align:center}
+.cta p{color:#bbb4c8;max-width:600px;margin:12px auto 25px}
+footer{padding:35px 0 55px;color:#777;font-size:.9rem}
+@media(max-width:800px){
+ .hero-grid,.about{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
+ .skills{grid-template-columns:repeat(2,1fr)}
+ .process{grid-template-columns:1fr}
+ .navlinks{display:none}
+ .hero{padding-top:75px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container navin">
+    <a class="logo" href="#">BERACHAH<span>.</span></a>
+    <div class="navlinks">
+      <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Graphic & Visual Designer</div>
+      <h1>Design that makes your brand <em>stand out.</em></h1>
+      <p>I create clean, modern and attention-grabbing visuals for businesses, creators and digital brands — from promotional graphics and branding to web visual design.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Hire Me →</a>
+        <a class="btn" href="#work">View My Work</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="kicker">Selected capabilities</div>
+      <div class="monogram">B.</div>
+      <div class="mini">Flyers • Posters • Social Graphics • Branding • Banners • Digital Visual Design</div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Selected work</div><h2>Visual projects.</h2></div>
+      <p>A small selection of existing work, presented honestly as graphic, branding and visual-design projects.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="card-media"><img src="assets/chic-fashion-finds.png" alt="Chic Fashion Finds circular fashion logo"></div>
+        <div class="card-body">
+          <div class="tag">Branding / Logo Design</div>
+          <h3>Chic Fashion Finds</h3>
+          <p>Elegant boutique-style identity using a blush, black and rose-gold visual direction with a monogram, fashion icons and premium typography.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-media"><img src="assets/life-of-oluwatoyin.png" alt="The Life of Oluwatoyin cinematic poster"></div>
+        <div class="card-body">
+          <div class="tag">Poster / Digital Design</div>
+          <h3>The Life of Oluwatoyin</h3>
+          <p>Cinematic poster concept combining imagery, typography, storytelling and layered visual composition into one strong promotional piece.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">What I do</div><h2>Design services.</h2></div>
+      <p>Flexible freelance design support for one-off projects or ongoing creative work.</p>
+    </div>
+    <div class="skills">
+      <div class="skill">Social Media Graphics</div>
+      <div class="skill">Flyers & Posters</div>
+      <div class="skill">Brand Graphics</div>
+      <div class="skill">Banners & Ads</div>
+      <div class="skill">Web Visual Design</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <div class="kicker">About</div>
+      <h2>Clean. Professional. Purposeful.</h2>
+    </div>
+    <div class="about-box">
+      <h3>Built around your goal.</h3>
+      <p>I focus on clear visual hierarchy, strong typography and purposeful layouts. Whether you need a promotional graphic, a brand asset or a polished digital experience, I design around what the audience needs to see and do.</p>
+      <br>
+      <p><strong>Based remotely • Available for freelance projects</strong></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Process</div><h2>Simple workflow.</h2></div>
+    </div>
+    <div class="process">
+      <div class="step"><div class="num">01</div><h3>Brief</h3><p>Tell me what you need, your audience and the goal of the design.</p></div>
+      <div class="step"><div class="num">02</div><h3>Design</h3><p>I create the visual direction and refine the details around your feedback.</p></div>
+      <div class="step"><div class="num">03</div><h3>Deliver</h3><p>You receive the finished design ready for its intended platform or campaign.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta">
+      <div class="kicker">Have a project?</div>
+      <h2>Let's create something strong.</h2>
+      <p>Send me your project details, what you need designed and your deadline. I'll get back to you with the next steps.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn primary" href="mailto:rotowaberachah@gmail.com?subject=Graphic%20Design%20Project">Hire Me →</a>
+        <a class="btn" href="mailto:rotowaberachah@gmail.com">Email Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Berachah. Graphic & Visual Design.</div>
+</footer>
+</body>
+</html>
